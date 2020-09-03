@@ -35,6 +35,6 @@
     "node": ">=12.18.0"
   },
   "publishConfig": {
-    "registry": "http://npm.e-ports.com/"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
