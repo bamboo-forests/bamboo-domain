@@ -1,0 +1,40 @@
+{
+  "name": "bamboo-domain",
+  "version": "1.0.0",
+  "description": "bamboo-domain",
+  "main": "lib/index.js",
+  "author": "ALBERT <huiweb01@163.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bamboo-forests/bamboo-domain.git"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run babel",
+    "clean": "rm -rf ./lib",
+    "babel": "babel src --out-dir lib",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "fbjs": "2.0.0",
+    "immutable": "4.0.0-rc.12"
+  },
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "1.0.2",
+    "babel-preset-es2015": "6.24.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "engines": {
+    "node": ">=12.18.0"
+  },
+  "publishConfig": {
+    "registry": "http://npm.e-ports.com/"
+  }
+}
